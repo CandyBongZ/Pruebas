@@ -13,17 +13,7 @@ import java.util.stream.Collectors;
 @Controller
 public class MedicoControlador {
 
-    @GetMapping("/peticion1")
-    public String peticion1(Model model) {
 
-        String nombres = Medicos.lista.stream()
-                .map(m -> m.getNombre())
-                .collect(Collectors.joining(", "));
-
-        model.addAttribute("nombres", nombres);
-
-        return "vista1";
-    }
 
     @GetMapping("/peticion2")
     public String peticion2(Model model) {
@@ -53,7 +43,7 @@ public class MedicoControlador {
         model.addAttribute("pacientes", pacientes);
         model.addAttribute("diagnosticos", diagnosticos);
 
-        return "vista3";
+        return "peticion3";
     }
 
     @GetMapping("/peticion4")
