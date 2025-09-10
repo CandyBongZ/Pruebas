@@ -23,9 +23,7 @@ public class MedicoControlador {
         model.addAttribute("conteo", stats.getCount());
         model.addAttribute("suma", stats.getSum());
         model.addAttribute("promedio", stats.getAverage());
-        model.addAttribute("min", stats.getMin());
-        model.addAttribute("max", stats.getMax());
-        System.out.println("Hola soy Pacho");
+        //test
 
         return "vista2";
     }
