@@ -25,6 +25,7 @@ public class MedicoControlador {
         model.addAttribute("promedio", stats.getAverage());
         model.addAttribute("min", stats.getMin());
         model.addAttribute("max", stats.getMax());
+        System.out.println("Hola soy Pacho");
 
         return "vista2";
     }
