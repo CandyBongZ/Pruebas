@@ -63,7 +63,7 @@ public class MedicoControlador {
                 .anyMatch(m -> m.getPacientes().isEmpty());
 
         Boolean masDeDos = Medicos.lista.stream()
-                .anyMatch(m -> m.getPacientes().size() > 1);
+                .anyMatch(m -> m.getPacientes().size() > 1000);
 
         Boolean ningunoConCincoOMas = Medicos.lista.stream()
                 .noneMatch(m -> m.getPacientes().size() >= 5);
